@@ -7,8 +7,8 @@
     <meta name="description" content="">
     
     
-    <link rel="preload" href="/skyManage/assets/css/styles.59dba618.css" as="style"><link rel="preload" href="/skyManage/assets/js/app.59dba618.js" as="script"><link rel="preload" href="/skyManage/assets/js/4.0ebdeb8c.js" as="script"><link rel="prefetch" href="/skyManage/assets/js/2.d4f08b1e.js"><link rel="prefetch" href="/skyManage/assets/css/1.styles.ea91ead0.css"><link rel="prefetch" href="/skyManage/assets/js/1.ea91ead0.js"><link rel="prefetch" href="/skyManage/assets/css/2.styles.d4f08b1e.css"><link rel="prefetch" href="/skyManage/assets/js/3.40d6ac04.js"><link rel="prefetch" href="/skyManage/assets/js/5.4b5b37cc.js"><link rel="prefetch" href="/skyManage/assets/js/6.5dc82c23.js"><link rel="prefetch" href="/skyManage/assets/js/7.b789b490.js">
-    <link rel="stylesheet" href="/skyManage/assets/css/1.styles.ea91ead0.css"><link rel="stylesheet" href="/skyManage/assets/css/2.styles.d4f08b1e.css"><link rel="stylesheet" href="/skyManage/assets/css/styles.59dba618.css">
+    <link rel="preload" href="/skyManage/assets/css/styles.22f79906.css" as="style"><link rel="preload" href="/skyManage/assets/js/app.22f79906.js" as="script"><link rel="preload" href="/skyManage/assets/js/4.1a870bb7.js" as="script"><link rel="prefetch" href="/skyManage/assets/js/2.d4f08b1e.js"><link rel="prefetch" href="/skyManage/assets/css/1.styles.ea91ead0.css"><link rel="prefetch" href="/skyManage/assets/js/1.ea91ead0.js"><link rel="prefetch" href="/skyManage/assets/css/2.styles.d4f08b1e.css"><link rel="prefetch" href="/skyManage/assets/js/3.aae1ceb7.js"><link rel="prefetch" href="/skyManage/assets/js/5.4b5b37cc.js"><link rel="prefetch" href="/skyManage/assets/js/6.5dc82c23.js"><link rel="prefetch" href="/skyManage/assets/js/7.b789b490.js">
+    <link rel="stylesheet" href="/skyManage/assets/css/1.styles.ea91ead0.css"><link rel="stylesheet" href="/skyManage/assets/css/2.styles.d4f08b1e.css"><link rel="stylesheet" href="/skyManage/assets/css/styles.22f79906.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/skyManage/" class="home-link router-link-active"><!----> <span class="site-name">skyManage接口文档</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"> <a href="https://github.com/Leon1Zhu/skyManage" target="_blank" rel="noopener noreferrer" class="repo-link">
@@ -53,6 +53,8 @@
            status<span class="token punctuation">:</span> <span class="token string">'安装中'</span><span class="token punctuation">,</span>
          <span class="token punctuation">}</span>
       <span class="token punctuation">]</span><span class="token comment">// 如果当前用户没有新建完任务，能否有字段表明当前是停留在第几步</span>
+</code></pre></div></li></ul> <ol start="3"><li>api/deploy/getTaskInfoById(通过任务ID获取该任务的详细信息)</li></ol> <ul><li>传入：
+<ul><li>userInfo: 用户信息，用于获取当前用户权限下的任务列表</li> <li>taskId: 搜索信息</li></ul></li> <li>返回结果：<div class="language-javascript extra-class"><pre class="language-javascript"><code> taskInfo<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">// 任务相关详细信息</span>
 </code></pre></div></li></ul> <h2 id="新建任务流程"><a href="#新建任务流程" aria-hidden="true" class="header-anchor">#</a> 新建任务流程</h2> <ol><li>新建任务时，所有流程统一在总的taskConfig进行操作，保存的时候保存taskConfig即可</li> <li>当用户对任务进行修改时，从currentStep中获取当前任务已经进行到第几步，直接跳到该步骤</li> <li>每一次点击下一步时，都调用保存接口，对taskConfig对象进行保存和刷新</li></ol></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
         ←
         <a href="/skyManage/" class="prev router-link-active">
@@ -62,6 +64,6 @@
         </a>
         →
       </span></p></div> </div> <!----></div></div>
-    <script src="/skyManage/assets/js/4.0ebdeb8c.js" defer></script><script src="/skyManage/assets/js/app.59dba618.js" defer></script>
+    <script src="/skyManage/assets/js/4.1a870bb7.js" defer></script><script src="/skyManage/assets/js/app.22f79906.js" defer></script>
   </body>
 </html>

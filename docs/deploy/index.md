@@ -57,6 +57,14 @@
             }
          ]// 如果当前用户没有新建完任务，能否有字段表明当前是停留在第几步
    ```
+ 3. api/deploy/getTaskInfoById(通过任务ID获取该任务的详细信息)
+ - 传入：
+   * userInfo: 用户信息，用于获取当前用户权限下的任务列表
+   * taskId: 搜索信息
+ - 返回结果：
+   ```javascript
+    taskInfo: {} // 任务相关详细信息
+   ```
    
 ## 新建任务流程
 1. 新建任务时，所有流程统一在总的taskConfig进行操作，保存的时候保存taskConfig即可
