@@ -3,7 +3,7 @@
  * @Date: 2018/9/22 下午11:15
  */
 module.exports = {
-  base: '/skyManage-api-list/',
+  base: '/skyManage/',
   title: 'skyManage接口文档',
   port:8888,
   themeConfig: {
