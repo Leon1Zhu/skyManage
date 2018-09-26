@@ -22,6 +22,7 @@ module.exports = {
         children: [
           ['deploy/', '平台部署首页' ],
           ['deploy/newTask', '新建任务' ],
+          ['deploy/deploy', '系统部署' ],
         ]
       },
       {
