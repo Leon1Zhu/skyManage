@@ -31,7 +31,7 @@
  - 返回结果：
    ```javascript
      stopResult: true // 暂停结果
-    ```
+   ```
     
 4. api/deploy/stopComponentDeploy(根据传入的模块Id或者组件Id设置暂停)
 
