@@ -3,7 +3,7 @@
 
  method: Get
  - 传入：
-  userInfo:{} // 当前用户信息
+  * userInfo:{} // 当前用户信息
  - 返回结果：
    ```javascript
    indexInfo: { //首页信息对象

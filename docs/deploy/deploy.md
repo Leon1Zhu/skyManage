@@ -2,11 +2,11 @@
 
  method: Get
  - 传入：
-  userInfo:{} // 当前用户信息
-  moduleId: '' // 模块ID
+  * userInfo:{} // 当前用户信息
+  * moduleId: '' // 模块ID
  - 返回结果：
    ```javascript
-    moduleDeployInfo: { //模块安装信息
+    moduleDeployInfo: { //模块安装信息,包括日志
     
     } 
     ```
@@ -15,30 +15,41 @@
 
  method: Post
  - 传入：
-  userInfo:{} // 当前用户信息
-  moduleId: '' // 模块Id
+  * userInfo:{} // 当前用户信息
+  * moduleId: '' // 模块Id
  - 返回结果：
    ```javascript
-     moduleDeployInfo: { //模块安装信息
+     moduleDeployInfo: { //模块安装信息,包括日志
      } 
     ```
-3. api/deploy/stopModuleDeploy(根据传入的模块Id或者组件Id设置暂停)
+3. api/deploy/stopModuleDeploy(根据传入的组件Id执行安装)
 
  method: Post
  - 传入：
-  userInfo:{} // 当前用户信息
-  moduleId: '' // 模块Id
+  * userInfo:{} // 当前用户信息
+  * componentId: '' // 模块Id
  - 返回结果：
    ```javascript
-     stopResult: true // 暂停结果
+     moduleDeployInfo: { //模块安装信息,包括日志
+          } 
    ```
     
-4. api/deploy/stopComponentDeploy(根据传入的模块Id或者组件Id设置暂停)
+4. api/deploy/stopComponentDeploy(根据传入的模块Id设置暂停)
 
  method: Post
  - 传入：
-  userInfo:{} // 当前用户信息
-  componentId: '' // 组件Id
+  * userInfo:{} // 当前用户信息
+  * moduleId: '' // 组件Id
+ - 返回结果：
+   ```javascript
+     stopResult: true //暂停结果
+    ```
+5. api/deploy/stopComponentDeploy(根据传入的组件Id设置暂停)
+
+ method: Post
+ - 传入：
+  * userInfo:{} // 当前用户信息
+  * componentId: '' // 组件Id
  - 返回结果：
    ```javascript
      stopResult: true //暂停结果
